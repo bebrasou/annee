@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+body {
+    background-color: #bcd7f225; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 5vw;
+    font-family: "Nunito", sans-serif;;
+}
+
+.menu-card {
+    background-color: #BCD7F2;
+    padding: 6vw;
+    border-radius: 3vw;
+    display: flex;
+    justify-content: space-between; 
+    gap: 4vw; 
+    align-items: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.214);
+    width: 100%;  
+    max-width: 900px; 
+}
+
+.image-container {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.keypad-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    margin: 10px;
+    margin-bottom: 25px;
+    height: 55px;
+    border: none;
+    width: max-content;
+    border-radius: 15px;
+    font-size:large;
+    font-weight: bold;
+    text-align: center;
+}
+
+input#correct {
+    color: rgba(32, 255, 32, 0.806);
+}
+
+input#incorrect {
+    color: rgba(237, 18, 18, 0.806);
+}
+
+.keypad {
+    display: grid;
+    grid-template-columns: repeat(3, 60px);
+    gap: 15px;
+}
+
+button {
+    width: 60px;
+    height: 60px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 12px;
+    font-size: 24px;
+    color: #69aef3;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.1s, background-color 0.2s;
+    box-shadow: 0 4px 0px #748ba3;
+}
+
+button:hover {
+    background-color: #98cbffa0;
+}
+
+button:active {
+    transform: translateY(3px);
+    box-shadow: 0 1px 0px #c4d6e9;
+}
