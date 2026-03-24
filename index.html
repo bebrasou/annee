@@ -1,121 +1,42 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
     <title>une année de relation.</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="all">
-      <div class="titlediv">
-        <h2 class="title">année.</h2>
-      </div>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-      <div class="menu-card birthday-mode">
-        <div class="card-content">
-          <div class="photo-banner">
-            <img src="../assets/second_menucard.gif" alt="Birthday" />
-            <div class="photo-text">
-              <h3>
-                ты в ссоре матом посылаешь далеко пойти <br />
-                больная дура, все равно нам по пути
-              </h3>
+    <div class="menu-card">
+        <div class="profile-section">
+            <div class="image-container">
+                <img src="assets/firstmenu.jpg" alt="фота" id="profile-img">
             </div>
-          </div>
-
-          <div class="nav-keypad">
-            <button class="nav-btn" id="assoc-btn">associations</button>
-            <button class="nav-btn" id="memories-btn">memories</button>
-            <button class="nav-btn" id="lis-moi-btn">lis-moi</button>
-          </div>
-
-          <div id="assoc-content" class="extra-content">
-            <div class="assoc-inner">
-              <img
-                src="../assets/associations.jpg"
-                alt="Association Photo"
-                class="assoc-img"
-              />
-              <p>
-                прохладное море, корица, париж, треск костра, холодный воздух
-                после удушья, любимая зипка, вишня, тихий омут, имбирный пряник,
-                вкус метала во рту, une jalousie occasionnelle, запотевшее
-                стекло в машине, на котором рисуют разные картинки, если
-                протереть окно ладонью - будет открываться вид на ночной
-                пылающий нью йорк, херсон, эхо, звездное небо из окна,
-                единственный засушенный подаренный цветок лилии, головокружение
-                от кипящей воды в ванной, хрустящая сладкая выпечка, крылья, моя
-                постель, дисней, кока кола-(пепси?) зеро, смех вечером, «ай донт
-                андерстанд ю» зайцы, впервые нагреться после того как морозит,
-                качель, где я катаюсь, песни, лана, алекс
-              </p>
-            </div>
-          </div>
-
-          <div id="memories-content" class="extra-content">
-            <div class="memories-inner">
-              <p>
-                <b>les souvenirs les plus marquants</b>
-                <br />
-                <br />
-                помнишь начало? хихихаха с кайдена.. тогда я тебя только
-                узнавала, были в боте и не пересекались, явно не святой, но
-                главное что сейчас это иначе, ибо je regretterais de ne pas
-                l'avoir rencontré, помню первый звонок в телеграмме в летом, как
-                в эвейд играли, потом на тавере парня тебе искали.. до сих пор
-                кстати с ним общаюсь иногда, помню как ты в лагере была, как я
-                тебя ждала пол дня что бы пообщаться, вечные жалобы на волосы
-                помню, помню как зайца тебе передавала, приветы от дани помню,
-                помню розочки в телеграмме и детей в селестиане до сих пор
-                кормлю !!
-                <br />
-                <br />
-                <b>Je t'aime, merci pour ces moments chaleureux</b>
-              </p>
-            </div>
-          </div>
-
-          <div id="lis-moi-content" class="extra-content">
-            <div class="lis-moi-inner">
-              <img
-                src="../assets/lis-moi.jpg"
-                alt="Association Photo"
-                class="lis-moi-img"
-              />
-              <p>
-                «таким был прежде мой лис, он ничем не отличался от ста тысячи
-                других лисиц. но я с ним подружился и теперь он единственный в
-                целом свете.»
-                <br />
-                <br />
-                «Do not enter» is written on the doorway. Why can't everyone
-                just go away?
-                <br />
-                Except you—you can stay.
-              </p>
-
-              <button class="nav-btn" id="inner-btn">пасматреть</button>
-            </div>
-          </div>
-
-          <div id="inner-content" class="extra-content">
-            <div class="inner-inner">
-              <img
-                src="../assets/mail-envelope.png"
-                alt="Association Photo"
-                class="inner-img"
-              />
-              <button class="nav-btn" id="inner2-btn">аткрыть</button>
-            </div>
-          </div>
         </div>
-      </div>
+
+        <div class="keypad-section">
+            <input id="input" type="text" placeholder="день нашего знакомства?">
+            
+            <div class="keypad">
+                <button onclick="pressKey(1)">1</button>
+                <button onclick="pressKey(2)">2</button>
+                <button onclick="pressKey(3)">3</button>
+
+                <button onclick="pressKey(4)">4</button>
+                <button onclick="pressKey(5)">5</button>
+                <button onclick="pressKey(6)">6</button>
+
+                <button onclick="pressKey(7)">7</button>
+                <button onclick="pressKey(8)">8</button>
+                <button onclick="pressKey(9)">9</button>
+
+                <div></div>
+                <button onclick="pressKey(0)">0</button>
+                <div></div>
+            </div>
+        </div>
     </div>
-    <div id="image-modal" class="modal">
-      <span class="close-modal">&times;</span>
-      <img class="modal-content" id="full-image" src="../assets/mail.JPG" />
-    </div>
+
     <script src="app.js"></script>
-  </body>
+</body>
 </html>
