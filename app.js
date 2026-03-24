@@ -13,7 +13,7 @@ function pressKey(number) {
 
   if (clicks === 4) {
     if (whole_number !== "2503") {
-      inputbar.value = "неверна";
+      inputbar.value = "неверно";
       inputbar.id = "incorrect";
       setTimeout(() => {
         inputbar.value = "";
@@ -23,7 +23,7 @@ function pressKey(number) {
       clicks = 0;
       whole_number = "";
     } else {
-      inputbar.value = "верна";
+      inputbar.value = "верно";
       inputbar.id = "correct";
       setTimeout(() => {
         window.location.href = "second_menu/index.html";
